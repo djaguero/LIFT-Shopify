@@ -1,1 +1,318 @@
-{"sections":{"76f3ceeb-85f1-42aa-81cf-4d38e760cd9b":{"type":"custom-liquid","custom_css":["#typingText h1 {font-size: 62px; letter-spacing: 1px; \/* Espaciado entre letras *\/ line-height: 1.4; \/* Altura de línea *\/ text-align: center; \/* Alineación al centro *\/ margin: 0px;}","#typingText span {border-right: 2px solid; white-space: nowrap; overflow: hidden;}","#p {text-align: center;}"],"settings":{"custom_liquid":"<div id=\"typingText\">\n  <h1>Somos \n<br><span><\/span><\/h1>\n<\/div>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var texts = [\"LIFT\", \"e-commerce\"];\n  var typingElement = document.querySelector('#typingText span');\n  var typingDelay = 100;\n  var erasingDelay = 100;\n  var newTextDelay = 2000; \/\/ Tiempo entre cada texto\n  var textArrayIndex = 0;\n  var charIndex = 0;\n\n  function type() {\n    if (charIndex < texts[textArrayIndex].length) {\n      typingElement.textContent += texts[textArrayIndex].charAt(charIndex);\n      charIndex++;\n      setTimeout(type, typingDelay);\n    } \n    else {\n      setTimeout(erase, newTextDelay);\n    }\n  }\n\n  function erase() {\n    if (charIndex > 0) {\n      typingElement.textContent = texts[textArrayIndex].substring(0, charIndex-1);\n      charIndex--;\n      setTimeout(erase, erasingDelay);\n    } \n    else {\n      textArrayIndex = (textArrayIndex + 1) % texts.length;\n      setTimeout(type, typingDelay + 1100);\n    }\n  }\n\n  setTimeout(type, newTextDelay + 250);\n});\n<\/script>","color_scheme":"accent-1","padding_top":20,"padding_bottom":0}},"0e1c361a-e7af-4336-81c4-2c2a0b76bc5c":{"type":"rich-text","blocks":{"8e623ca1-0b9f-4d4d-a3c6-025403ac2333":{"type":"text","settings":{"text":"<p>{{ shop.brand.short_description }}<br\/>Hagamos una llamada y te asesoramos sin ningún costo<\/p>"}},"template--16402445795528__0e1c361a-e7af-4336-81c4-2c2a0b76bc5c-button-1":{"type":"button","settings":{"button_label":"HABLEMOS","button_link":"shopify:\/\/pages\/contact","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["8e623ca1-0b9f-4d4d-a3c6-025403ac2333","template--16402445795528__0e1c361a-e7af-4336-81c4-2c2a0b76bc5c-button-1"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"accent-1","full_width":true,"padding_top":0,"padding_bottom":100}},"pagefly-home":{"type":"pagefly-home","disabled":true,"settings":{}},"1e3e5929-dd5e-442d-845a-1a57f7983213":{"type":"rich-text","blocks":{"template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-heading-1":{"type":"heading","settings":{"heading":"<strong>Nuestro objetivo<\/strong>","heading_size":"h0"}},"template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-text-1":{"type":"text","settings":{"text":"<p>Acompañarte en el crecimiento de tu tienda online, desde el primer clic hasta la fidelización del cliente.<\/p>"}}},"block_order":["template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-heading-1","template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-text-1"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-2","full_width":true,"padding_top":40,"padding_bottom":52}},"341d0103-5484-4af0-9120-5594787f40c5":{"type":"rich-text","blocks":{"template--16402445795528__341d0103-5484-4af0-9120-5594787f40c5-heading-1":{"type":"heading","settings":{"heading":"<strong>Proyectos<\/strong>","heading_size":"h0"}}},"block_order":["template--16402445795528__341d0103-5484-4af0-9120-5594787f40c5-heading-1"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-1","full_width":true,"padding_top":40,"padding_bottom":0}},"c56c4949-d4fb-4521-b52c-5d38ff59806f":{"type":"liquid-with-text","blocks":{"template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-heading-1":{"type":"heading","settings":{"heading":"Samsung","heading_size":"h1"}},"template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-text-1":{"type":"text","settings":{"text":"<p>Experiencia de compra AR (Realidad Aumentada \/<em>Augmented Reality<\/em>) para la tienda en línea de Samsung en América Latina<\/p>","text_style":"body"}},"template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-button-1":{"type":"button","settings":{"button_label":"ver más","button_link":"shopify:\/\/metaobjects\/proyectos\/samsung","button_style_secondary":true}}},"block_order":["template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-heading-1","template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-text-1","template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-button-1"],"settings":{"custom_liquid_enabled":true,"custom_liquid_code":"<video autoplay=\"autoplay\" loop=\"loop\" muted defaultmuted playsinline oncontextmenu=\"return false;\" preload=\"auto\" id=\"openthinkingvideo\"><source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8fc0048a97d044df8386796de6f8a2c0.mp4\"><\/source><\/video><style>#openthinkingvideo { display:block; max-width: 100%; width: 100%; padding: 0; margin: 0 }<\/style>","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"","color_scheme":"background-1","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"ceb123cf-bdaa-464f-8912-6bdf84b66996":{"type":"rich-text","blocks":{"dee91893-d67d-48ac-91af-2c1c0fdcc403":{"type":"button","settings":{"button_label":"ver todos","button_link":"shopify:\/\/pages\/proyectos","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["dee91893-d67d-48ac-91af-2c1c0fdcc403"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-1","full_width":true,"padding_top":0,"padding_bottom":40}},"01ac0794-5175-48e7-ae77-0c7fc81f6fd1":{"type":"multicolumn","blocks":{"template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-1":{"type":"column","settings":{"title":"1. Desarrollo","text":"<p>Desarrollamos una tienda no solamente amigable para tu cliente, sino para ti tambien. Te damos todas las herramientas para que te empoderes de ella y te asesoramos en todo el proceso.<\/p>","link_label":"","link":""}},"template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-2":{"type":"column","settings":{"title":"2. Marketing y ventas","text":"<p>Tu tienda online puede estar perfectamente realizada pero sin darse a conocer, no cumple su funcion principal, vender.<\/p><p>En LIFT nos especializamos en Marketing y Ventas para Ecommerce.<\/p>","link_label":"","link":""}},"template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-3":{"type":"column","settings":{"title":"3. Oprimización y mantenimiento","text":"<p>Te acompañamos desde el primer clic hasta la fidelización del cliente con estrategias que te permitan:<\/p><ul><li>Potenciar tus ventas<\/li><li>Optimizar tus procesos<\/li><\/ul>","link_label":"","link":""}}},"block_order":["template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-1","template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-2","template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-3"],"settings":{"title":"<strong>Servicios<\/strong>","heading_size":"h0","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"primary","button_label":"ver más","button_link":"shopify:\/\/pages\/servicios","color_scheme":"background-2","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2":{"type":"image-with-text","blocks":{"c3e2974f-1ec2-44b8-b0a8-53eed7a1ae30":{"type":"caption","settings":{"caption":"Shopify partners","text_style":"caption-with-letter-spacing","text_size":"medium"}},"template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-heading-1":{"type":"heading","settings":{"heading":"<strong>Nos especializamos en Shopify<\/strong>","heading_size":"h1"}},"template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-text-1":{"type":"text","settings":{"text":"<p>Con mas de 9 años de experiencia trabajando con Shopify te asesoramos y trabajamos junto a ti para potenciar tu negocio online. Estamos en todo el proceso.<\/p>","text_style":"body"}},"template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-button-1":{"type":"button","disabled":true,"settings":{"button_label":"ver más","button_link":"","button_style_secondary":false}}},"block_order":["c3e2974f-1ec2-44b8-b0a8-53eed7a1ae30","template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-heading-1","template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-text-1","template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-button-1"],"settings":{"image":"shopify:\/\/shop_images\/hands-holds-a-cell-phone-showing-the-shopify-logo.jpg","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"accent-1","color_scheme":"accent-1","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"d49652c1-7761-428b-a528-ee29ab311fc6":{"type":"contact-form","settings":{"heading":"<strong>Asesoría gratis<\/strong>","heading_size":"h1","color_scheme":"accent-1","padding_top":36,"padding_bottom":36}}},"order":["76f3ceeb-85f1-42aa-81cf-4d38e760cd9b","0e1c361a-e7af-4336-81c4-2c2a0b76bc5c","pagefly-home","1e3e5929-dd5e-442d-845a-1a57f7983213","341d0103-5484-4af0-9120-5594787f40c5","c56c4949-d4fb-4521-b52c-5d38ff59806f","ceb123cf-bdaa-464f-8912-6bdf84b66996","01ac0794-5175-48e7-ae77-0c7fc81f6fd1","bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2","d49652c1-7761-428b-a528-ee29ab311fc6"]}
+{
+  "sections": {
+    "76f3ceeb-85f1-42aa-81cf-4d38e760cd9b": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#typingText h1 {font-size: 62px; letter-spacing: 1px; \/* Espaciado entre letras *\/ line-height: 1.4; \/* Altura de línea *\/ text-align: center; \/* Alineación al centro *\/ margin: 0px;}",
+        "#typingText span {border-right: 2px solid; white-space: nowrap; overflow: hidden;}",
+        "#p {text-align: center;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"typingText\">\n  <h1>Somos \n<br><span><\/span><\/h1>\n<\/div>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var texts = [\"LIFT\", \"e-commerce\"];\n  var typingElement = document.querySelector('#typingText span');\n  var typingDelay = 100;\n  var erasingDelay = 100;\n  var newTextDelay = 2000; \/\/ Tiempo entre cada texto\n  var textArrayIndex = 0;\n  var charIndex = 0;\n\n  function type() {\n    if (charIndex < texts[textArrayIndex].length) {\n      typingElement.textContent += texts[textArrayIndex].charAt(charIndex);\n      charIndex++;\n      setTimeout(type, typingDelay);\n    } \n    else {\n      setTimeout(erase, newTextDelay);\n    }\n  }\n\n  function erase() {\n    if (charIndex > 0) {\n      typingElement.textContent = texts[textArrayIndex].substring(0, charIndex-1);\n      charIndex--;\n      setTimeout(erase, erasingDelay);\n    } \n    else {\n      textArrayIndex = (textArrayIndex + 1) % texts.length;\n      setTimeout(type, typingDelay + 1100);\n    }\n  }\n\n  setTimeout(type, newTextDelay + 250);\n});\n<\/script>",
+        "color_scheme": "accent-1",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "0e1c361a-e7af-4336-81c4-2c2a0b76bc5c": {
+      "type": "rich-text",
+      "blocks": {
+        "8e623ca1-0b9f-4d4d-a3c6-025403ac2333": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ shop.brand.short_description }}<br\/>Hagamos una llamada y te asesoramos sin ningún costo<\/p>"
+          }
+        },
+        "template--16402445795528__0e1c361a-e7af-4336-81c4-2c2a0b76bc5c-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "HABLEMOS",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "8e623ca1-0b9f-4d4d-a3c6-025403ac2333",
+        "template--16402445795528__0e1c361a-e7af-4336-81c4-2c2a0b76bc5c-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "pagefly-home": {
+      "type": "pagefly-home",
+      "settings": {
+      }
+    },
+    "1e3e5929-dd5e-442d-845a-1a57f7983213": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Nuestro objetivo<\/strong>",
+            "heading_size": "h0"
+          }
+        },
+        "template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Acompañarte en el crecimiento de tu tienda online, desde el primer clic hasta la fidelización del cliente.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-heading-1",
+        "template--16402445795528__1e3e5929-dd5e-442d-845a-1a57f7983213-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "341d0103-5484-4af0-9120-5594787f40c5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16402445795528__341d0103-5484-4af0-9120-5594787f40c5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Proyectos<\/strong>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--16402445795528__341d0103-5484-4af0-9120-5594787f40c5-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "c56c4949-d4fb-4521-b52c-5d38ff59806f": {
+      "type": "liquid-with-text",
+      "blocks": {
+        "template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Samsung",
+            "heading_size": "h1"
+          }
+        },
+        "template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experiencia de compra AR (Realidad Aumentada \/<em>Augmented Reality<\/em>) para la tienda en línea de Samsung en América Latina<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "ver más",
+            "button_link": "shopify:\/\/metaobjects\/proyectos\/samsung",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-heading-1",
+        "template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-text-1",
+        "template--16402445795528__c56c4949-d4fb-4521-b52c-5d38ff59806f-button-1"
+      ],
+      "settings": {
+        "custom_liquid_enabled": true,
+        "custom_liquid_code": "<video autoplay=\"autoplay\" loop=\"loop\" muted defaultmuted playsinline oncontextmenu=\"return false;\" preload=\"auto\" id=\"openthinkingvideo\"><source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8fc0048a97d044df8386796de6f8a2c0.mp4\"><\/source><\/video><style>#openthinkingvideo { display:block; max-width: 100%; width: 100%; padding: 0; margin: 0 }<\/style>",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ceb123cf-bdaa-464f-8912-6bdf84b66996": {
+      "type": "rich-text",
+      "blocks": {
+        "dee91893-d67d-48ac-91af-2c1c0fdcc403": {
+          "type": "button",
+          "settings": {
+            "button_label": "ver todos",
+            "button_link": "shopify:\/\/pages\/proyectos",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "dee91893-d67d-48ac-91af-2c1c0fdcc403"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "01ac0794-5175-48e7-ae77-0c7fc81f6fd1": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "1. Desarrollo",
+            "text": "<p>Desarrollamos una tienda no solamente amigable para tu cliente, sino para ti tambien. Te damos todas las herramientas para que te empoderes de ella y te asesoramos en todo el proceso.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "2. Marketing y ventas",
+            "text": "<p>Tu tienda online puede estar perfectamente realizada pero sin darse a conocer, no cumple su funcion principal, vender.<\/p><p>En LIFT nos especializamos en Marketing y Ventas para Ecommerce.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "3. Oprimización y mantenimiento",
+            "text": "<p>Te acompañamos desde el primer clic hasta la fidelización del cliente con estrategias que te permitan:<\/p><ul><li>Potenciar tus ventas<\/li><li>Optimizar tus procesos<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-1",
+        "template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-2",
+        "template--16402445795528__01ac0794-5175-48e7-ae77-0c7fc81f6fd1-column-3"
+      ],
+      "settings": {
+        "title": "<strong>Servicios<\/strong>",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "ver más",
+        "button_link": "shopify:\/\/pages\/servicios",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2": {
+      "type": "image-with-text",
+      "blocks": {
+        "c3e2974f-1ec2-44b8-b0a8-53eed7a1ae30": {
+          "type": "caption",
+          "settings": {
+            "caption": "Shopify partners",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Nos especializamos en Shopify<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Con mas de 9 años de experiencia trabajando con Shopify te asesoramos y trabajamos junto a ti para potenciar tu negocio online. Estamos en todo el proceso.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "ver más",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "c3e2974f-1ec2-44b8-b0a8-53eed7a1ae30",
+        "template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-heading-1",
+        "template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-text-1",
+        "template--16402445795528__bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hands-holds-a-cell-phone-showing-the-shopify-logo.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d49652c1-7761-428b-a528-ee29ab311fc6": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "<strong>Asesoría gratis<\/strong>",
+        "heading_size": "h1",
+        "color_scheme": "accent-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "76f3ceeb-85f1-42aa-81cf-4d38e760cd9b",
+    "0e1c361a-e7af-4336-81c4-2c2a0b76bc5c",
+    "pagefly-home",
+    "1e3e5929-dd5e-442d-845a-1a57f7983213",
+    "341d0103-5484-4af0-9120-5594787f40c5",
+    "c56c4949-d4fb-4521-b52c-5d38ff59806f",
+    "ceb123cf-bdaa-464f-8912-6bdf84b66996",
+    "01ac0794-5175-48e7-ae77-0c7fc81f6fd1",
+    "bb6e0c50-1a5f-449c-9b91-2149cc2ebcb2",
+    "d49652c1-7761-428b-a528-ee29ab311fc6"
+  ]
+}
